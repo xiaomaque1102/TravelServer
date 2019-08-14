@@ -11,7 +11,9 @@ var app = express();
 
 var cors=require('cors');
 app.use(cors({
-    origin:['http://10.130.228.140:8080'],  //指定接收的地址
+    origin:['http://39.98.212.142:10005'],  //指定接收的地址
+    // origin:['http://10.207.125.34:8080'],  //指定接收的地址
+    // origin:['http://10.207.126.231:8080','http://10.207.125.34:8080','10.207.124.57'],  //指定接收的地址
     methods:['GET','POST'],  //指定接收的请求类型
     alloweHeaders:['Content-Type','Authorization']  //指定header
 }))
